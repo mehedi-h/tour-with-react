@@ -31,15 +31,14 @@ const Countries = () => {
                 <h4>Visited Country : {visitedCountries.length}</h4>
                 <ul>
                 {
-                    visitedCountries.map((country, cca3) => <li key={cca3}>{country.name.common}</li>)
-                    // <br /> <img style={{width: '100px'}} src={country.flags.png} alt="" />
+                    visitedCountries.map((country, cca3) => <li key={cca3}>{country.name.common} <br /> <img style={{width: '100px'}} src={country.flags.png} alt="" /></li>)
                 }
                 </ul>
-                <div className="flags-container">
+                {/* <div className="flags-container">
                     {
                         visitedFlags.map((flag, idx) => <img key={idx} src={flag}></img>)
                     }
-                </div>
+                </div> */}
             </div>
             <div className="country-container">
             {
